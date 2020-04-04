@@ -3,3 +3,8 @@ install:
   - pip install -r requirements.txt
 script:
   - python -m unittest
+addons:
+  sonarcloud:
+    organization: "isbo-05-16"
+script:
+  - sonar-scanner
