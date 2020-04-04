@@ -8,6 +8,6 @@ addons:
     organization: "isbo-05-16"
 script:
   - sonar-scanner
-  - python -m coverage run -m unittest
+  - python -m coverage run --source=./ -m unittest
 after_success:
   coveralls
